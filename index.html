@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="calculator">
+      <input type="text" id="input" readonly>
+      <div class="buttons">
+        <button onclick="clearInput()">C</button>
+        <button onclick="deleteDigit()">CE</button>
+        <button onclick="buttonClicked('/')" class="operator">/</button>
+        <button onclick="buttonClicked('*')" class="operator">*</button>
+        <button onclick="buttonClicked('7')">7</button>
+        <button onclick="buttonClicked('8')">8</button>
+        <button onclick="buttonClicked('9')">9</button>
+        <button onclick="buttonClicked('-')" class="operator">-</button>
+        <button onclick="buttonClicked('4')">4</button>
+        <button onclick="buttonClicked('5')">5</button>
+        <button onclick="buttonClicked('6')">6</button>
+        <button onclick="buttonClicked('+')" class="operator">+</button>
+        <button onclick="buttonClicked('1')">1</button>
+        <button onclick="buttonClicked('2')">2</button>
+        <button onclick="buttonClicked('3')">3</button>
+        <button onclick="calculateResult()" class="equal">=</button>
+        <button onclick="buttonClicked('0')">0</button>
+        <button onclick="buttonClicked('.')">.</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
